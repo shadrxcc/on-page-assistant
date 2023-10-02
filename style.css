@@ -5,10 +5,52 @@
 }
 
 html body {
-  padding: 0;
+  padding: 0 8px;
   margin: 0 auto;
   box-sizing: border-box;
   height: 100vh;
   font-family: space;
   background-color: darkkhaki;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 2em;
+}
+
+button {
+  padding: 1rem 3rem;
+  border-radius: 15px 30px;
+  outline: none;
+  border: 0;
+  font-family: space;
+  color: white;
+  letter-spacing: .25rem;
+}
+
+#button1{
+  background-color: brown;
+}
+
+#button2{
+  background-color: rebeccapurple;
+}
+
+#button3{
+  background-color: green;
+}
+
+#button4{
+background-color: indianred;
+}
+
+#button5{
+background-color: slateblue;
+}
+
+#reset {
+  background-color: red;
+  margin: auto;
 }

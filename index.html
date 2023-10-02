@@ -4,19 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>On-Page-Assistant</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<0.156.1>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-</body>
   </head>
   <body>
-    <div id="assistant">
-    </div>
+    <div id="assistant"></div>
     <div>
-        <h1 style="text-align: center;">Sheddy's Demo On-Page-Assistant ;)</h1>
+      <h1 style="text-align: center">Sheddy's Demo On-Page-Assistant ;)</h1>
     </div>
-    <button id="button1">Button 1</button>
-    <button id="button2">Button 2</button>
-    <button id="button3">Reset</button>
+    <div id="buttons">
+      <button id="button1">Button 1</button>
+      <button id="button2">Button 2</button>
+      <button id="button3">Button 2</button>
+      <button id="button4">Button 2</button>
+      <button id="button5">Button 2</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
     <script src="/script.js"></script>
-   
+  </body>
 </html>
